@@ -1,0 +1,29 @@
+#include<stdio.h>
+#include <locale.h>
+#include<windows.h>
+
+int main ()
+
+{
+setlocale (LC_ALL,"");
+SetConsoleTextAttribute (GetStdHandle (STD_OUTPUT_HANDLE), 3);
+
+float celsius = 89;
+float fahrenheit = 89;
+float temperaturaFahrenheit;
+float temperaturaCelsius;
+
+temperaturaFahrenheit =(9/5.0)celsius + 32;
+temperaturaCelsius = (fahrenheit - 32.0)(5.0/9.0);
+printf (" C A L C U L A D O R A D E T E M P E R A T U R A S \n");
+printf ("\n");
+printf (" Calculadora temperatura Celsius a Fahrenheit\n");
+printf (" Temperatura %f",temperaturaFahrenheit);
+printf ("°F\n");
+printf ("\n");
+printf (" Calculadora temperatura Fahrenheit a Celsius\n");
+printf (" Temperatura %f",temperaturaCelsius);
+printf ("°C\n");
+
+ return 0;
+}
